@@ -1,0 +1,44 @@
+@use "../component/variables" as *;
+.footer {
+  max-width: 100%;
+  padding: 0 18%;
+  background-color: $primary;
+}
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 100%;
+  text-align: left;
+}
+.contact h2 {
+  color: $white;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.contact p {
+  color: #03c988;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: $text;
+}
+.fa-heart {
+  color: rgb(255, 50, 50);
+}
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: $text;
+}
+.footer-end span i {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+.footer-end span i:last-child {
+  margin: 0;
+}

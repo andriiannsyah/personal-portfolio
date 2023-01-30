@@ -1,0 +1,115 @@
+@use "../component/variables" as *;
+.project {
+  max-width: 100%;
+  padding: 0 18%;
+  background-color: $primary;
+  padding-bottom: 4rem;
+}
+.heading-line {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $tersiery;
+  letter-spacing: 1px;
+}
+
+.heading-line h1 {
+  font-size: 3.8rem;
+  color: $white;
+  margin: 0;
+  margin-top: 4rem;
+  font-weight: 600;
+}
+.heading-line p {
+  font-size: 1rem;
+  color: $tersiery;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.row-project {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.box-project {
+  max-width: 240px;
+  min-height: 300px;
+  background-color: $secondary;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.box-project:hover {
+  transform: translateY(-10px);
+  transition: 0.5s all ease;
+}
+.box-project h2 {
+  font-size: 1.2rem;
+  color: #03c988;
+  margin: 0;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid $tersiery;
+  text-align: center;
+  text-transform: capitalize;
+}
+.box-project p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: $text;
+  text-align: center;
+}
+.box-project .project-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-tools span {
+  font-size: 0.8rem;
+  color: $text;
+  padding: 0.4rem;
+  display: inline-block;
+  margin: 0.2rem;
+  background-color: $tersiery;
+}
+.project-view {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+}
+.project-view i {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: $text;
+  padding: 0.5rem;
+  border: 1px solid $tersiery;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.project-view i:last-child {
+  margin: 0;
+}
+.project-view i:hover {
+  color: #03c988;
+}
+
+@media (max-width: 1278px) {
+  .project {
+    padding: 0 8%;
+  }
+}

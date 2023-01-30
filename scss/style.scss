@@ -1,0 +1,12 @@
+// IMPORT COMPONENT
+@use "component/mixins";
+@use "component/variables";
+@use "component/reset";
+
+// IMPORT SECTION
+@use "sections/navbar";
+@use "sections/hero";
+@use "sections/project";
+@use "sections/tech";
+@use "sections/about";
+@use "sections/footer";

@@ -1,0 +1,56 @@
+@use "../component/variables" as *;
+
+.about {
+  max-width: 100%;
+  padding: 1.4rem 18%;
+  border: none;
+  background-color: $primary;
+  padding-bottom: 4rem;
+}
+
+.achiev {
+  max-width: 100%;
+  padding: 1.4rem 18%;
+  border: none;
+  background-color: $primary;
+  padding-bottom: 4rem;
+}
+
+.heading-left {
+  max-width: 100%;
+  display: block;
+}
+.heading-left h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.achiev-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.achiev-box {
+  width: 7.5rem;
+  background-color: #212d45;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+.achiev-box h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.achiev-box p {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-top: 4px;
+}

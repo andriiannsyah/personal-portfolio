@@ -1,0 +1,150 @@
+@use "../component/variables" as *;
+.navbar {
+  max-width: 100%;
+  padding: 1.4rem 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: $primary;
+}
+
+.navbar .navbar-logo {
+  color: #03c988;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navbar-menu {
+  display: inline-block;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: $text;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+.navbar-menu a:nth-last-child(1) {
+  margin: 0;
+}
+
+.navbar-medsos,
+.navbar-medsos i {
+  display: inline-block;
+}
+.navbar-medsos i {
+  font-size: 1.6rem;
+  color: $white;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.navbar-medsos i:nth-last-child(1) {
+  margin: 0;
+}
+
+// Animasi
+.navbar-menu a:hover {
+  color: #03c988;
+  transition: 0.6s;
+}
+.navbar-medsos i:hover {
+  color: #03c988;
+  transition: 0.6s all ease;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: $white;
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  top: 0;
+  left: 0;
+}
+.hamburger span:nth-last-child(1) {
+  margin: 0;
+}
+
+.hamburger.active > span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active > span:nth-child(1) {
+  transform: rotate(45deg) translatey(11px);
+}
+.hamburger.active > span:nth-child(3) {
+  transform: rotate(-45deg) translatey(-11px);
+}
+
+// Query
+@media (max-width: 1020px) {
+  .navbar {
+    padding: 1.4rem 8%;
+  }
+}
+@media (max-width: 720px) {
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 1.4rem 8%;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: $primary;
+  }
+  .navbar-logo {
+    font-size: 1.4rem;
+  }
+  .navbar-menu a {
+    font-size: 1.1rem;
+  }
+  .navbar-medsos i {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 460px) {
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+  .navbar-menu a {
+    font-size: 1rem;
+  }
+  .navbar-medsos i {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 290px) {
+  // .hamburger {
+  //   display: block;
+  // }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar {
+    padding: 0.5rem 8%;
+  }
+  .navbar-menu {
+    padding: 0.5rem 8%;
+    top: 40px;
+  }
+  .navbar-medsos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0.5rem 4%;
+    top: 77px;
+    left: 0;
+    right: 0;
+    background-color: $primary;
+  }
+}
