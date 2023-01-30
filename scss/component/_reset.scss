@@ -1,4 +1,8 @@
 @use "variables" as *;
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -8,4 +12,8 @@ body {
   font-family: $grotesck;
   color: $white;
   border: none;
+}
+html,
+body {
+  overflow-x: hidden;
 }

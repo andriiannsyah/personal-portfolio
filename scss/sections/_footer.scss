@@ -5,10 +5,11 @@
   background-color: $primary;
 }
 .contact {
-  margin-top: 4rem;
+  padding-top: 4rem;
   margin-bottom: 4rem;
   max-width: 100%;
   text-align: left;
+  border-top: 0.5px solid $secondary;
 }
 .contact h2 {
   color: $white;
@@ -26,6 +27,10 @@
 .fa-heart {
   color: rgb(255, 50, 50);
 }
+.fa-heart:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 .footer-end {
   display: flex;
   justify-content: space-between;
@@ -34,11 +39,32 @@
   letter-spacing: 1px;
   font-weight: 300;
   color: $text;
+  flex: 1;
 }
 .footer-end span i {
   font-size: 1.4rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .footer-end span i:last-child {
   margin: 0;
+}
+
+.footer-end span > i:hover {
+  color: #03c988;
+}
+
+@media (max-width: 1020px) {
+  .footer {
+    padding: 1.4rem 8%;
+  }
+}
+@media (max-width: 560px) {
+  .footer-end {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-end {
+    font-size: 0.8rem;
+  }
 }

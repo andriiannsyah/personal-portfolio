@@ -64,9 +64,11 @@
   .hero {
     margin-top: 57px;
   }
-
-  .hero p {
-    font-size: 1rem;
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
   }
   .btn-more {
     padding: 0.4rem 0.8rem;
@@ -95,5 +97,13 @@
     padding: 0.3rem 0.6rem;
     font-size: 0.7rem;
     margin-top: 0rem;
+  }
+}
+@media (max-width: 290px) {
+  .hero-content h1 {
+    font-size: 1.2rem;
+  }
+  .heading-line p {
+    font-size: 0.8rem;
   }
 }

@@ -26,7 +26,6 @@
 }
 
 .achiev-wrap {
-  width: 100%;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -35,16 +34,23 @@
   gap: 1rem;
 }
 .achiev-box {
-  width: 7.5rem;
+  width: 130px;
+  min-height: 112px;
+  padding: 1rem;
   background-color: #212d45;
   border-radius: 8px;
-  padding: 1rem 2rem;
   text-align: left;
+  flex: 1;
 }
+
 .achiev-box h1 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+}
+.achiev-box:hover {
+  color: #03c988;
+  transition: 0.5s;
 }
 .achiev-box p {
   display: block;
@@ -53,4 +59,34 @@
   letter-spacing: 1px;
   margin: 0;
   margin-top: 4px;
+}
+
+@media (max-width: 1224px) {
+  .achiev {
+    padding: 1.4rem 8%;
+  }
+  .heading-left h2 {
+    font-size: 1.6rem;
+  }
+  .achiev-wrap {
+    justify-content: center;
+  }
+}
+@media (max-width: 933px) {
+  .achiev-box {
+    max-width: 100px;
+    min-height: 10rem;
+  }
+}
+@media (max-width: 742px) {
+  .achiev-box {
+    max-width: 400px;
+    min-height: 112px;
+    flex: 1;
+  }
+}
+@media (max-width: 647px) {
+  .achiev-box h1 {
+    font-size: 1.5rem;
+  }
 }
