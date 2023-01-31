@@ -9,7 +9,7 @@
   margin-bottom: 4rem;
   max-width: 100%;
   text-align: left;
-  border-top: 0.5px solid $secondary;
+  border-top: 1px solid $secondary;
 }
 .contact h2 {
   color: $white;
@@ -41,9 +41,19 @@
   color: $text;
   flex: 1;
 }
+
+.footer-end p {
+  max-width: 100%;
+}
+.footer-end .link-medsos {
+  display: flex;
+  gap: 1rem;
+}
+.footer-end span a {
+  color: $text;
+}
 .footer-end span i {
   font-size: 1.4rem;
-  margin-right: 1rem;
   cursor: pointer;
 }
 .footer-end span i:last-child {
@@ -51,6 +61,9 @@
 }
 
 .footer-end span > i:hover {
+  color: #03c988;
+}
+.author {
   color: #03c988;
 }
 
@@ -64,7 +77,21 @@
     justify-content: center;
     flex-direction: column;
   }
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+  .contact p {
+    font-size: 0.9rem;
+  }
   .footer-end {
     font-size: 0.8rem;
+  }
+  .link-medsos {
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 318px) {
+  .footer-end {
+    font-size: 0.6rem;
   }
 }
