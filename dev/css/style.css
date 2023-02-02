@@ -425,8 +425,8 @@ body {
   bottom: 1rem;
 }
 
-.project-view i {
-  font-size: 1rem;
+.project-view a {
+  text-decoration: none;
   margin-right: 10px;
   color: #bbb;
   padding: 0.5rem;
@@ -435,7 +435,11 @@ body {
   cursor: pointer;
 }
 
-.project-view i:last-child {
+.project-view i {
+  font-size: 1rem;
+}
+
+.project-view a:last-child {
   margin: 0;
 }
 

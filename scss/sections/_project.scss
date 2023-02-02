@@ -95,8 +95,8 @@
   position: absolute;
   bottom: 1rem;
 }
-.project-view i {
-  font-size: 1rem;
+.project-view a {
+  text-decoration: none;
   margin-right: 10px;
   color: $text;
   padding: 0.5rem;
@@ -104,7 +104,10 @@
   border-radius: 1px;
   cursor: pointer;
 }
-.project-view i:last-child {
+.project-view i {
+  font-size: 1rem;
+}
+.project-view a:last-child {
   margin: 0;
 }
 .project-view i:hover {
